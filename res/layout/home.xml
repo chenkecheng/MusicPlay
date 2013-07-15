@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2" 
+        android:rowCount="2">
+
+        <SearchView
+            android:id="@+id/searchView1"
+            android:layout_width="match_parent" >
+        </SearchView>
+
+        <Button
+            android:id="@+id/button1"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_column="0"
+            android:layout_gravity="left|top"
+            android:layout_row="1"
+            android:text="@string/button1" />
+
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="249dp"
+            android:layout_height="fill_parent"
+            android:layout_column="0"
+            android:layout_gravity="right|bottom"
+            android:layout_row="1"
+            android:inputType="none"
+            android:text="@string/editText1"
+            android:ems="10" >
+
+            <requestFocus />
+        </EditText>
+
+    </GridLayout>
+
+    <ListView
+        android:id="@+id/listView_home"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.28" >
+    </ListView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#6B6B6B"
+        android:orientation="vertical" >
+
+        <ProgressBar
+            android:id="@+id/progressBar_home"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageButton
+                android:id="@+id/imageButton1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@android:drawable/btn_radio" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.61"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textView_musicName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/musicname_textview"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/textView_artist"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/artist_textview" />
+
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/imageButton2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@android:drawable/ic_media_play" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

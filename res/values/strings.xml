@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MusicPlay</string>
+    <string name="action_settings">设置</string>
+    <string name="title_section1">首页</string>
+    <string name="title_section2">音乐列表</string>
+    <string name="title_section3">当前播放</string>
+    <string name="mlist_textview">当前播放列表</string>
+    <string name="musicname_textview">当前歌曲名称</string>
+	<string name="artist_textview">艺术家</string>
+	<string name="button1">添加音乐</string>
+	<string name="editText1">最近添加的音乐</string>
+</resources>
